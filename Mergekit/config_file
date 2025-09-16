@@ -1,9 +1,9 @@
 linear_yaml_config = """
 models:
-  - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/Stories'
+  - model: model1_path
     parameters:
       weight: 0.5
-  - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/OpenOrca'
+  - model: model2_path
     parameters:
       weight: 0.5
 merge_method: linear
@@ -20,12 +20,12 @@ with open('linear_config.yaml', 'w', encoding="utf-8") as f:
 # slerp_yaml_config = """
 # slices:
 #    - sources:
-#        - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/Stories'
+#        - model: model1_path
 #          layer_range: [0, 36]
-#        - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/OpenOrca'
+#        - model: model2_path
 #          layer_range: [0, 36]
 # merge_method: slerp
-# base_model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/OpenOrca'
+# base_model: model1_path
 # parameters:
 #    t:
 #     - filter: attn
@@ -46,16 +46,16 @@ with open('linear_config.yaml', 'w', encoding="utf-8") as f:
 
 # ties_yaml_config = """
 # models:
-#   - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/Stories'
+#   - model: model1_path
 #     parameters:
 #        weight: 0.7
 #        density: 1.0
-#   - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/OpenOrca'
+#   - model: model2_path
 #     parameters:
 #        weight: 0.3
 #        density: 1.0
 # merge_method: ties
-# base_model: ytu-ce-cosmos/turkish-gpt2-large
+# base_model: model_base
 # parameters:
 #    normalize: true
 # dtype: bfloat16
@@ -69,14 +69,14 @@ with open('linear_config.yaml', 'w', encoding="utf-8") as f:
 
 # bread_yaml_config = """
 # models:
-#   - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/Stories'
+#   - model: model1_path
 #     parameters:
 #        weight: 0.5
-#   - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/OpenOrca'
+#   - model: model2_path
 #     parameters:
 #        weight: 0.5
 # merge_method: breadcrumbs
-# base_model: ytu-ce-cosmos/turkish-gpt2-large
+# base_model: model_base
 # parameters:
 #     density: 0.5
 #     gamma: 0.01
