@@ -1,0 +1,11 @@
+1- Claude Desktop’ı kurun
+
+2- pip install uv
+
+3- uv init my-first-mcp-server
+
+4- pip install "mcp[cli]"
+
+5- (İsteğe bağlı—hata alırsanız) pip install --upgrade typer
+
+6- Proje klasöründe: uv run mcp install main.py
