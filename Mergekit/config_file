@@ -1,0 +1,87 @@
+linear_yaml_config = """
+models:
+  - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/Stories'
+    parameters:
+      weight: 0.5
+  - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/OpenOrca'
+    parameters:
+      weight: 0.5
+merge_method: linear
+dtype: float16
+"""
+
+
+with open('linear_config.yaml', 'w', encoding="utf-8") as f:
+    f.write(linear_yaml_config)
+
+
+
+
+# slerp_yaml_config = """
+# slices:
+#    - sources:
+#        - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/Stories'
+#          layer_range: [0, 36]
+#        - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/OpenOrca'
+#          layer_range: [0, 36]
+# merge_method: slerp
+# base_model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/OpenOrca'
+# parameters:
+#    t:
+#     - filter: attn
+#       value: [0, 0.5, 0.3, 0.7, 1]
+#     - filter: mlp
+#       value: [1, 0.5, 0.7, 0.3, 0]
+#     - value: 0.5
+# dtype: float16
+# """
+
+
+# with open('slerp_config.yaml', 'w', encoding="utf-8") as f:
+#     f.write(slerp_yaml_config)
+
+
+
+
+
+# ties_yaml_config = """
+# models:
+#   - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/Stories'
+#     parameters:
+#        weight: 0.7
+#        density: 1.0
+#   - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/OpenOrca'
+#     parameters:
+#        weight: 0.3
+#        density: 1.0
+# merge_method: ties
+# base_model: ytu-ce-cosmos/turkish-gpt2-large
+# parameters:
+#    normalize: true
+# dtype: bfloat16
+# """
+
+# with open('ties_config.yaml', 'w', encoding="utf-8") as f:
+#     f.write(ties_yaml_config)	
+
+
+
+
+# bread_yaml_config = """
+# models:
+#   - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/Stories'
+#     parameters:
+#        weight: 0.5
+#   - model: 'C:/Users/Sots/Desktop/UBMK2025/Modeller/OpenOrca'
+#     parameters:
+#        weight: 0.5
+# merge_method: breadcrumbs
+# base_model: ytu-ce-cosmos/turkish-gpt2-large
+# parameters:
+#     density: 0.5
+#     gamma: 0.01
+# dtype: bfloat16
+# """
+
+# with open('bread_config.yaml', 'w', encoding="utf-8") as f:
+#     f.write(bread_yaml_config)	
