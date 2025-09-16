@@ -1,0 +1,16 @@
+Linear:
+
+mergekit-yaml linear_config.yaml model_path --lazy-unpickle --allow-crimes
+
+Slerp:
+
+mergekit-yaml slerp_config.yaml model_path --lazy-unpickle --allow-crimes
+
+
+Ties:
+
+mergekit-yaml ties_config.yaml model_path --lazy-unpickle --allow-crimes
+
+Bread:
+
+mergekit-yaml bread_config.yaml model_path --lazy-unpickle --allow-crimes
